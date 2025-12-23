@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cahier de textes scolaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Mon Cahier de Textes</h1>
+        
+        <div class="add-task">
+            <input type="text" id="taskInput" placeholder="Ex: Maths - Exercice 5 page 42">
+            <input type="date" id="taskDate">
+            <button onclick="addTask()">Ajouter</button>
+        </div>
+        
+        <div class="tasks">
+            <h2>Devoirs à faire :</h2>
+            <ul id="taskList">
+                <!-- Les tâches apparaîtront ici -->
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
