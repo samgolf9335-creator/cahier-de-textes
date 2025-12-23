@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     min-height: 100vh;
     padding: 20px;
 }
@@ -18,13 +18,16 @@ body {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 2px solid #ffd700; /* AJOUTEZ CETTE LIGNE */
 }
 
 h1 {
-    color: #333;
+    color: #1e3c72;            /* Changé de #333 à #1e3c72 */
     text-align: center;
     margin-bottom: 30px;
     font-size: 2.5em;
+    border-bottom: 3px solid #ffd700; /* AJOUTEZ CETTE LIGNE */
+    padding-bottom: 10px;      /* AJOUTEZ CETTE LIGNE */
 }
 
 .add-task {
@@ -45,7 +48,7 @@ h1 {
 
 .add-task button {
     padding: 12px 25px;
-    background: #4CAF50;
+    background: #1e3c72;    /* Changé de #4CAF50 */
     color: white;
     border: none;
     border-radius: 8px;
@@ -55,7 +58,7 @@ h1 {
 }
 
 .add-task button:hover {
-    background: #45a049;
+    background: #2a5298;    /* Changé de #45a049 */
 }
 
 .tasks h2 {
@@ -73,7 +76,7 @@ h1 {
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 8px;
-    border-left: 5px solid #4CAF50;
+    border-left: 5px solid #1e3c72; /* Changé de #4CAF50 */
     display: flex;
     justify-content: space-between;
     align-items: center;
