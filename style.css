@@ -120,6 +120,34 @@ h1 {
     .add-task {
         flex-direction: column;
     }
+    /* Ce style s'applique uniquement lors de l'impression */
+@media print {
+  /* On cache le formulaire, les boutons supprimer et le bouton imprimer lui-même */
+  .input-section, 
+  .btn-print, 
+  .btn-delete,
+  input, 
+  button {
+    display: none !important;
+  }
+
+  /* On ajuste le design pour que ce soit joli sur papier */
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  .devoir-card {
+    border: 1px solid #ccc !important;
+    margin-bottom: 10px !important;
+    break-inside: avoid; /* Évite de couper un devoir entre deux pages */
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 24pt;
+  }
+}
     
     .add-task input, .add-task button {
         width: 100%;
